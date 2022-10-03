@@ -11,6 +11,15 @@ for(var i = 0; i < arr.length; i++) {
     }
     count_arr.push(count);
 }
-
-console.log(count_arr);
 var max = Math.max(...count_arr);
+var j = count_arr.indexOf(max);
+
+answer = arr[j];
+
+for(var i = 0; i<arr.length; i++) {
+    if (count_arr[i] === max && i != j) {
+        answer = -1;
+    }
+}
+
+console.log(answer);
