@@ -1,9 +1,6 @@
+//구슬을 나누는 경우의 수
 var balls = 8;
 var share = 4;
-
-
-
-
 
 var son = 1;
     for (var i = balls; i>share; i--) {
