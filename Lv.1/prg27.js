@@ -1,3 +1,5 @@
+//모음제거
+
 function solution(my_string) {
    
     var arr = my_string.split('');
