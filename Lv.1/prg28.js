@@ -1,4 +1,4 @@
-//문자열 정렬하기
+// 문자열 정렬하기
 
 var my_string = "p2o4i8gj2";
 var str_arr = my_string.split('');
