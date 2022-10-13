@@ -6,14 +6,18 @@ var answer = 0;
 
 var s_arr = s.split(' ');
  
-for (var i = 0; i<s_arr.length && s_arr != 'Z'; i++) {
+for (var i = 0; i<s_arr.length; i++) {
     
+    var j = 0;
+    while(s_arr[i] != 'Z' && j<s_arr.length) {
+        answer += parseInt(s_arr[i]);
 
-    answer += s_arr[i];
-
-    if(s_arr[i+1] === 'Z') {
-        answer -= s_arr[i];
+        if(s_arr[i+1] === 'Z') {
+            answer -= parseInt(s_arr[i]);
+        }
+        j++;
     }
+    
 }
 
 console.log(answer);
