@@ -1,8 +1,14 @@
 //369게임
-var order = 29423;
+var cipher = "dfjardstddetckdaccccdegk";
+var code = 4;
 
-const mySet = new Set([3, 6, 9]);
 
-console.log(String(order).split('')
-                         .filter(n => mySet.has((n))));
+var answer = [];
+var arr = cipher.split('');
 
+    for ( var i = 0; i<arr.length; i++) {
+        if ((i+1) % code === 0) {
+            answer.push(arr[i]);
+        }
+    }
+console.log(answer.join(''));
