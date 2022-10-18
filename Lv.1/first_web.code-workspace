@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Project/web_standard/first_web"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "programmers"
+	}
+}
