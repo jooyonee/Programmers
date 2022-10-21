@@ -2,20 +2,21 @@
 var array = [7, 77, 17];
 
 var count = 0;
-    
-    for (var i = 0; i < array.length; i++) {
-        var arr = String(array[i]).split('');
+var new_arr = [];
 
-        console.log(arr);
-
-        // for (var i = 0; i < arr.length; i++) {
-        //     if (arr[i] === "7") {
-        //         count ++;
-        //     }
-        // }
-
+for (var i = 0; i < array.length; i++) {
+    var temp_arr = String(array[i]).split('');
+    for (var j = 0; j < temp_arr.length; j++) {
+        new_arr.push(temp_arr[j]);
     }
+}
 
-    // console.log(count);
+for (var i = 0; i < new_arr.length; i++) {
+    if (new_arr[i] == '7') {
+        count ++;
+    }
+}
+
+console.log(count);
     
     
