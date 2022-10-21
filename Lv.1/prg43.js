@@ -1,3 +1,4 @@
+//7의 개수
 var array = [7, 77, 17];
 
 var count = 0;
