@@ -1,7 +1,7 @@
 //캐릭터의 좌표
 
-var keyinput = ["down", "down", "up", "up", "up", "down", "down"];
-var board = [5, 5];
+var keyinput = ["down", "down", "down", "down"];
+var board = [7, 9];
 
     var x = 0;
     var y = 0;
@@ -14,31 +14,31 @@ console.log(limit_y);
 for (var i = 0; i < keyinput.length; i++) {
 
     if (keyinput[i] === "left") {
-        if (Math.abs(x) >= limit_x) {
+        x--;
+        if (Math.abs(x) > limit_x) {
             x++;
         }
-        x--;
         console.log('왼쪽');
     }
     if (keyinput[i] === "right") {
-        if (Math.abs(x) >= limit_x) {
+        x++;
+        if (Math.abs(x) > limit_x) {
             x--;
         }
-        x++;
         console.log('오른쪽');
     }
     if (keyinput[i] === "up") {
-        if (Math.abs(y) >= limit_y) {
+        y++;
+        if (Math.abs(y) > limit_y) {
             y--;
         }
-        y++;
         console.log('위로');
     }
     if (keyinput[i] === "down") {
-        if (Math.abs(y) >= limit_y) {
+        y--;
+        if (Math.abs(y) > limit_y) {
             y++;
         }
-        y--;
         console.log('아래로');
     }
     console.log([x, y]);
