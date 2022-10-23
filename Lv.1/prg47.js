@@ -1,5 +1,5 @@
 //다항식 더하기
-var polynomial = 'x + x + x';
+var polynomial = '10x + 6x + 12x';
 
 
 var arr = polynomial.split(' + ');
@@ -22,9 +22,15 @@ for (var i = 0; i < arr.length; i++) {
     }
 }
 
-
-console.log(sangsu);
-console.log(gyesu);
+var answer = gyesu + 'x' + ' + ' + sangsu;
 
 
+if (sangsu === 0) {
+    answer = String(gyesu+'x');
+}
+if (gyesu === 0) {
+    answer = 0;
+}
+
+console.log(answer);
 
